@@ -1,12 +1,12 @@
-> setwd("C:/Users/Seungyeon_L/Desktop/Seungyeon_RFolder")
-> mytable=read.csv("C:/Users/Seungyeon_L/Desktop/Seungyeon_RFolder/Workbook_Example_Bivariate_dataset.csv", header=TRUE)
-mytable
-plot(mytable$Profit, mytable$Number.of.Defective.Items,
-     main="Profit and Defective Item Scatter Plot",#title name
-     xlab="Proffit in Thousands",#x-axis name
-     ylab="Number of Defective Items",#y-axis name
-     frame.plot=false,#yes, put line
-     pch=1, #circle shape
-     cex=1, #defalt size
-    col="red" #red
-    )
+# Assignment: Sales Margin on Defective Items in R with scatterplot 
+# Author: Mahesh KC 
+install.packages("xlsx")
+library(xlsx)
+par("mar")
+par(mar=rep(2,4))
+# Assuming the data is on working directory 
+dat <- read.xlsx("Workbook-Example-Bivariate dataset.xlsx",sheetName = "Sheet1",header = TRUE)
+plot(dat$Number.of.Defective.Items~dat$Profit..thousands.,main="Sales margin on Defective Items",
+     xlab="Number of Defective Items",ylab="Profit on Thousand",
+     frame.plot=TRUE,pch=c(17,18),col=c("blue","green"),cex=0.8,data=dat)
+
