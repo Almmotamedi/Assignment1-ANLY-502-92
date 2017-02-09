@@ -3,39 +3,3 @@ To create, explore and share your findings with your classmates on the scatter-p
 some changes in the code
 
 
-# Assignment by Vinay Kumar Aavula, HUID 199258
-
-> getwd()
-[1] "C:/Users/######/Documents"
-> setwd("C:/Users/######/Desktop/R WDir")
-> getwd()
-[1] "C:/Users/######/Desktop/R WDir"
-> myTable = read.csv("C:/Users/######/Desktop/R WDir/Workbook-Example-Bivariate dataset.csv")
-> myTable
-> names(myTable)
-[1] "Profit"                    "Number.of.Defective.Items"
-
-# XLAB AND YLAB ARE USED TO NAME THE X-AXIS AND Y-AXIS IN THE PLOT. AN EXAMPLE OF IT SHOWN BELOW,IN WHICH X-AXIS NAMED PROFIT IN THOUSANDS AND Y-AXIS NUMBER OF 
-#DEFECTIVE ITEMS
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, xlab = "Profit in Thousands", ylab = "Number of Defective Items")
-
-#MAIN IS THE ATTRIBUTE IN PLOT FUNCTION TO DEFINE THE TITLE OF THE PLOT. BELOW IS THE TITLE OF THE PLOT THAT SAYS "SCATTERPLOT"
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, main = "Scatterplot", xlab = "Profit in Thousands", ylab = "Number of Defective Items")
-
-#COL IS USED TO SPECIFY THE COLOR OF THE PLOT
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, main = "Scatterplot", xlab = "Profit in Thousands", ylab = "Number of Defective Items", col = "red")
-
-#FRAME.PLOT = TRUE/FALSEIS USED TO SPECIFY WHETHER THE PLOT WE HAVE PRODUCED SHOULD HAVE BORDERS OR WITH NO BORDERS. FRAME.PLOT = TRUE RESULTS IN NO BORDERS AND
-#FRAME.PLOT = TRUE GIVES US THE SCATTERPLOT WITH BORDERS 
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, main = "Scatterplot", xlab = "Profit in Thousands", ylab = "Number of Defective Items", 
-frame.plot = TRUE, 
-col = "red")
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, main = "Scatterplot", xlab = "Profit in Thousands", ylab = "Number of Defective Items", 
-frame.plot = FALSE, 
-col = "red")
-
-#PCH= GIVES US AN OPTION TO SPECIFY SYMBOLS TO USE WHEN PLOTTING THE POINTS. PCH = 19 GIVES US SOLID BLACK CIRCLE POINTS
-#CEX INDICATES THE AMOUNT BY WHICH PLOTTING TEXT AND SYMBOLS SHOULD BE SCALED. CEX = 1.5 GIVES US A SCALE 50% LARGER IN SIZE
-> plot(myTable$Profit, myTable$Number.of.Defective.Items, main = "Scatterplot", pch = 19, cex = 1.5, col = "blue", xlab = "Profit in Thousands", ylab = "Number of 
-Defective Items", frame.plot = TRUE)
-
