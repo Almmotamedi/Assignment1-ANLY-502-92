@@ -1,4 +1,14 @@
-setwd("/Users/almmotamedi/Desktop/R")
-> mytable=read.csv("/Users/almmotamedi/Desktop/R/Workbook_Example_Bivariate_dataset.csv", header=TRUE)
+>setwd("C:/Users/user/Desktop/Analytics_502")
+> mytable=read.csv("C:/Users/user/Desktop/Analytics_502/Workbook_Example_Bivariate_dataset.csv", header=TRUE)
 mytable
-plot(mytable$Profit, mytable$Number.of.Defective.Items)
+plot(mytable$Profit, mytable$Number.of.Defective.Items,
+     main="Profit and Defective Item Scatter Plot",  ###title for plot
+     xlab="Proffit in Thousands",         ####x-axis as Profit as Thousands
+     ylab="Number of Defective Items",#y-axis name
+     frame.plot=false,
+     pch=1, ###shape
+     cex=1, ##size
+    col="green", ##green
+    asp = 1, ##aspect ratio(asp)
+    type= "s"  #type of plot  ## accidently made changes directly
+)
