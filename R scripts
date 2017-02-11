@@ -1,4 +1,6 @@
-> getwd()
+
+
+####> getwd()
 [1] "C:/Users/######/Documents"
 > setwd("C:/Users/######/Desktop/R WDir")
 > getwd()
