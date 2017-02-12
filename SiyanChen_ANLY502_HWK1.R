@@ -1,3 +1,5 @@
+#Author:SiyanChen
+
 setwd ("/Users/siyanchen/Desktop/Harrisburg/ANLY 502/HWK 1")
 getwd()
 
