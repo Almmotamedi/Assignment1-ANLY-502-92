@@ -65,4 +65,4 @@ Profit Number.of.Defective.Items
 > plot(NewTable$Profit, NewTable$Number.of.Defective.Items, main = "Scatterplot_ New Table", xlab = "Profit Numbers", ylab = "Defective Number", 
 +      frame.plot = FALSE, 
 +      col = "orange", 
-+      pch = 15, cex=1.2)
++      pch = 15, cex=1.2) 
